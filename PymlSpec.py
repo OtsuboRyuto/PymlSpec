@@ -21,7 +21,7 @@ class Color:
     BLUE = '\033[34m'
 
 
-class PymlError(Exception):
+class YamlSchemeError(Exception):
     pass
 
 
@@ -88,9 +88,9 @@ def test_execute(title, host, module, args, content, expect, backend, content_ar
 def parse_file(file: dict):
     for host in file:
         if "tests" not in file[host]:
-            raise PymlError(f"yaml must contain tests key in {file['host']}")
+            raise YamlSchemeError(f"yaml must contain tests key in {file['host']}")
         if file[host]["backend"].split(":")[0] not in BACKEND:
-            raise PymlError(
+            raise YamlSchemeError(
                 f"yaml backend key must contain {BACKEND} but got {file[host]['backend']} in {file[host]}")
         connection = testinfra.get_host(file[host]["backend"])
         for test in file[host]["tests"]:
