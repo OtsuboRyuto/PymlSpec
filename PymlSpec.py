@@ -97,7 +97,7 @@ def parse_file(file: dict):
             for key in test.keys():
                 test_keys = {i for i in test[key]}
                 if not TEST_ITEMS.issubset(test_keys):
-                    raise PymlError(
+                    raise YamlSchemeError(
                         f"test must have 2 keys module, content.\n but got {test_keys} in {file['host']} ")
                 if "expect" not in test_keys:
                     test[key]["expect"] = True
@@ -114,7 +114,7 @@ def calc_num_of_schedule(file) -> int:
     num_of_schedule = 0
     for host in file:
         if "tests" not in file[host]:
-            raise PymlError(f"yaml must contain tests key in {file['host']}")
+            raise YamlSchemeError(f"yaml must contain tests key in {file['host']}")
         num_of_schedule = num_of_schedule + len(file[host]["tests"])
     return num_of_schedule
 
