@@ -2,6 +2,7 @@
 Yamlをベースに構成管理を誰でも簡単に実施できるツールです。
 
 実行例
+```
 localhost:
   backend: "local://"
   tests:
@@ -22,7 +23,7 @@ localhost:
       args: "/"
       content: filesystem
       expect: "ext"
-      
+ ```
    実行結果
 =====================  test information  =====================
 platform Linux version #1 SMP Wed Nov 23 01:01:46 UTC 2022
