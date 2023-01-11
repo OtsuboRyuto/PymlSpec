@@ -65,5 +65,4 @@ Test proceed in 0.003s
                                            OK=2, NG=2, Total=4
 ```
 
-テスト内容については以下参照\n
-https://testinfra.readthedocs.io/en/latest/modules.html
+テスト内容について: https://testinfra.readthedocs.io/en/latest/modules.html
