@@ -24,37 +24,39 @@ localhost:
       expect: "ext"
       
    実行結果
-   ==================================================  test information  ==================================================
+=====================  test information  =====================
 platform Linux version #1 SMP Wed Nov 23 01:01:46 UTC 2022
 Python version 3.10.6
 scheduled tests 4
 
 
-=====================================================  start test  =====================================================
-==============================================  check google connection  ==============================================
+========================  start test  ========================
+=================  check google connection  =================
 
 
 Success
 Coverage 1/4
-Test proceed in 0.01s
-================================================  check nginx service  ================================================
+Test proceed in 0.03s
+===================  check nginx service  ===================
 
 
 Error
 Expect value True, but actually False
 Coverage 1/4
-Test proceed in 0.05s
-=================================================  mount point exists  =================================================
+Test proceed in 0.06s
+====================  mount point exists  ====================
 
 
 Success
 Coverage 2/4
-Test proceed in 0.002s
-=================================================  mount point exists  =================================================
+Test proceed in 0.003s
+====================  mount point exists  ====================
 
 
 Error
 Expect value ext, but actually ext4
 Coverage 2/4
-Test proceed in 0.002s
-================================================  Test Ended in 0.07s  ================================================
+Test proceed in 0.003s
+====================  Test Ended in 0.1s  ====================
+                                           OK=2, NG=2, Total=4
+ry@DESKTOP-NH6DT3D:/mnt/c/Users/anbur/Dropbox$
