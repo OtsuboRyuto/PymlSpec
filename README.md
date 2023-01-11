@@ -24,7 +24,10 @@ localhost:
       content: filesystem
       expect: "ext"
  ```
+ 
+ 
    実行結果
+```
 =====================  test information  =====================
 platform Linux version #1 SMP Wed Nov 23 01:01:46 UTC 2022
 Python version 3.10.6
@@ -60,4 +63,7 @@ Coverage 2/4
 Test proceed in 0.003s
 ====================  Test Ended in 0.1s  ====================
                                            OK=2, NG=2, Total=4
-ry@DESKTOP-NH6DT3D:/mnt/c/Users/anbur/Dropbox$
+```
+
+テスト内容については以下参照
+https://testinfra.readthedocs.io/en/latest/modules.html
